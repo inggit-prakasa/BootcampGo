@@ -60,7 +60,7 @@ func main() {
 					if kendaraan[i].tipe == "Motor" {
 						if waktu > 1 {
 							fmt.Print("Bayar parkir sebanyak : ")
-							fmt.Println("Rp.",int(waktu*3000+5000))
+							fmt.Println("Rp.",int((waktu-1)*3000+5000))
 						} else {
 							fmt.Print("Bayar parkir sebanyak")
 							fmt.Println("Rp.",5000)
@@ -68,7 +68,7 @@ func main() {
 					} else if kendaraan[i].tipe == "Mobil" {
 						if waktu > 1 {
 							fmt.Print("Bayar parkir sebanyak : ")
-							fmt.Println("Rp.",int(waktu*2000+3000))
+							fmt.Println("Rp.",int((waktu-1)*2000+3000))
 						} else {
 							fmt.Print("Bayar parkir sebanyak")
 							fmt.Println("Rp.",3000)
