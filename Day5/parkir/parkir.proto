@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package parkir;
+
+message Empty {}
+
+message IdParkir {
+  string id =1;
+  string time = 2;
+}
+
+message Kendaraan {
+  string id = 1;
+  string plat = 2;
+  string tipe = 3;
+}
+
+message BayarParkir {
+  string id = 1;
+  int64 price = 2;
+  string plat = 3;
+  string tipe = 4;
+  string TMasuk = 5;
+  string TKeluar = 6;
+}
+
+service parkir {
+  rpc MasukParkir (Empty) returns (IdParkir) {}
+  rpc KeluarParkir (Kendaraan) returns (BayarParkir) {}
+}
+
+

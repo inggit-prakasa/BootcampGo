@@ -7,7 +7,6 @@ import (
 
 const (
 	layoutISO = "2006-01-02"
-	layoutUS  = "January 2, 2006"
 )
 
 func main() {
